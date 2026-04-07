@@ -1,0 +1,17 @@
+{
+  "name": "agentguard-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/desktop"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/desktop",
+    "build": "npm run build -w apps/desktop",
+    "tauri:dev": "npm run tauri:dev -w apps/desktop",
+    "tauri:build": "npm run tauri:build -w apps/desktop"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-notification": "^2.3.3",
+    "marked": "^17.0.6"
+  }
+}

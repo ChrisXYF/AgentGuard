@@ -1,0 +1,43 @@
+{
+  "resourceLogs": [
+    {
+      "resource": {
+        "attributes": [
+          { "key": "service.name", "value": { "stringValue": "codex-cli" } },
+          { "key": "workspace.path", "value": { "stringValue": "/Users/example/project" } }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": { "name": "codex_runtime" },
+          "logRecords": [
+            {
+              "timeUnixNano": "1773580000000000000",
+              "severityText": "INFO",
+              "body": { "stringValue": "Tool call completed" },
+              "attributes": [
+                { "key": "session_id", "value": { "stringValue": "codex-run-123" } },
+                { "key": "tool_name", "value": { "stringValue": "exec_command" } },
+                { "key": "status", "value": { "stringValue": "completed" } },
+                { "key": "duration_ms", "value": { "intValue": "842" } }
+              ]
+            },
+            {
+              "timeUnixNano": "1773580001000000000",
+              "severityText": "INFO",
+              "body": { "stringValue": "Model response received" },
+              "attributes": [
+                { "key": "session_id", "value": { "stringValue": "codex-run-123" } },
+                { "key": "model", "value": { "stringValue": "gpt-5.4" } },
+                { "key": "input_token_count", "value": { "intValue": "3210" } },
+                { "key": "output_token_count", "value": { "intValue": "842" } },
+                { "key": "cost_usd", "value": { "doubleValue": 0.0834 } },
+                { "key": "duration_ms", "value": { "intValue": "4230" } }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

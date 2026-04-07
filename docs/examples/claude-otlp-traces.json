@@ -1,0 +1,46 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          { "key": "service.name", "value": { "stringValue": "claude-code" } },
+          { "key": "workspace.path", "value": { "stringValue": "/Users/example/project" } }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": { "name": "claude_runtime" },
+          "spans": [
+            {
+              "traceId": "aabbccddeeff00112233445566778899",
+              "spanId": "0011223344556677",
+              "name": "tool.exec",
+              "startTimeUnixNano": "1773580000000000000",
+              "endTimeUnixNano": "1773580000820000000",
+              "attributes": [
+                { "key": "session_id", "value": { "stringValue": "claude-run-456" } },
+                { "key": "tool_name", "value": { "stringValue": "Bash" } }
+              ],
+              "status": { "code": 0 }
+            },
+            {
+              "traceId": "aabbccddeeff00112233445566778899",
+              "spanId": "8899aabbccddeeff",
+              "name": "model.inference",
+              "startTimeUnixNano": "1773580001000000000",
+              "endTimeUnixNano": "1773580005230000000",
+              "attributes": [
+                { "key": "session_id", "value": { "stringValue": "claude-run-456" } },
+                { "key": "model", "value": { "stringValue": "claude-3-7-sonnet" } },
+                { "key": "gen_ai.usage.input_tokens", "value": { "intValue": "2800" } },
+                { "key": "gen_ai.usage.output_tokens", "value": { "intValue": "620" } },
+                { "key": "cost_usd", "value": { "doubleValue": 0.0412 } }
+              ],
+              "status": { "code": 0 }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

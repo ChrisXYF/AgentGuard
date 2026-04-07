@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #333333;
+  background: #ffffff;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+select,
+option {
+  line-height: 1.4;
+}
+
+option {
+  min-height: 1.5rem;
+}
+
+pre,
+code {
+  font-family: "SFMono-Regular", ui-monospace, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.hover-scrollbar {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.hover-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.hover-scrollbar:hover,
+.hover-scrollbar:focus-within {
+  scrollbar-color: #d1d5db transparent;
+}
+
+.hover-scrollbar:hover::-webkit-scrollbar-thumb,
+.hover-scrollbar:focus-within::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+}
+
+.hover-scrollbar:hover::-webkit-scrollbar-thumb:hover,
+.hover-scrollbar:focus-within::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
